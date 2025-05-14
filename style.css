@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: black;
+}
+html{
+    scrollbar-width: none;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container .box{
+    width: 35%;
+    height: auto;
+    border-radius: 25px;
+    background-color: #121212;
+}
+.container .box .inp{
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 25px; */
+    background-color: #ffffff00;
+    /* border: 1px solid #333333; */
+}
+.container .box .inp #inputTask{
+    width: 95%;
+    height: 45px;
+    background-color: #ffffff00;
+    border: 1px solid #333333;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.container .box .inp #addBtn{
+    width: 95%;
+    height: 45px;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.container .task{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-block: 25px;
+}
+.taskBlock{
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    padding-block: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff00;
+}
+.text {
+    width: 80%;
+    height: auto;
+    padding-left: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    color: white;
+}
+
+.delBtn{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+button{
+    background-color: #ffffff00;
+    border: none;
+}
+.container .box .heading{
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.container .box .heading h1{
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+@media (max-width : 1100px) {
+    .container .box{
+        width: 40%;
+    }   
+}
+@media (max-width : 900px) {
+    .container .box{
+        width: 45%;
+    }   
+}
+@media (max-width : 768px) {
+    .container .box{
+        width: 55%;
+    }   
+}
+@media (max-width : 650px) {
+    .container .box{
+        width: 65%;
+    }   
+}
+@media (max-width : 550px) {
+    .container .box{
+        width: 75%;
+    }   
+}
+@media (max-width : 450px) {
+    .container .box{
+        width: 85%;
+    }   
+}
+@media (max-width : 350px) {
+    .container .box{
+        width: 95%;
+    }   
+}
+@media (max-width : 328px) {
+    .container .box .heading h1{
+        font-size: 30px;
+    }
+}
+@media (max-width : 275px) {
+    .container .box .heading h1{
+        font-size: 25px;
+    }
+    .container .box .heading{
+        height: 30px;
+    }
+}
+@media (max-width : 229px) {
+    .container .box .heading h1{
+        font-size: 20px;
+    }
+    .container .box .heading{
+        height: 15px;
+    }
+}
+@media (max-width : 185px) {
+    .container .box .heading h1{
+        font-size: 18px;
+    }
+    .container .box .heading{
+        height: 8px;
+    }
+}
+@media (max-width : 165px) {
+    .container .box .heading h1{
+        font-size: 15px;
+    }
+    .container .box .heading{
+        height: 2px;
+    }
+    .container .box .inp{
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .container .box .inp #inputTask{
+        height: 30px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+    .container .box .inp #addBtn{
+        height: 30px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+    .container .task{
+        margin-top: 0px;
+        margin-bottom: 15px;
+        /* border: 1px solid white; */
+    }
+    .taskBlock{
+        padding-block: 10px;
+        /* border: 1px solid white; */
+    }
+    .text{
+        padding-left: 3px;
+    }
+    .text h3{
+        font-size: 15px;
+    }
+}
